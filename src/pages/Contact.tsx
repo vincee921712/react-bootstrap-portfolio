@@ -35,15 +35,15 @@ export const Contact: React.FC = () => {
   }
 
   return (
-    <div className="py-5">
+    <div className="py-5 page-wrapper">
       <Container>
         {/* Header */}
-        <div className="mb-5 pb-4 border-bottom border-secondary border-opacity-25">
-          <span className="gradient-badge gradient-badge-accent mb-2">PUBLIC CONTACT</span>
-          <h1 className="display-4 fw-extrabold text-light mb-2">
+        <div className="mb-5 pb-4 border-bottom border-secondary border-opacity-25 page-header-section">
+          <span className="gradient-badge gradient-badge-accent mb-3 px-3 py-2 fs-6">PUBLIC CONTACT</span>
+          <h1 className="page-main-title fw-extrabold text-light mb-3">
             Get In <span className="gradient-text">Touch</span>
           </h1>
-          <p className="lead text-muted mb-0" style={{ maxWidth: '640px' }}>
+          <p className="page-lead-text text-muted mb-0">
             Reach out for academic collaborations, capstone discussions, or developer inquiries.
           </p>
         </div>
@@ -51,40 +51,40 @@ export const Contact: React.FC = () => {
         <Row className="g-5">
           {/* Left: Contact Info */}
           <Col lg={5}>
-            <div className="d-flex flex-column gap-3">
-              <h3 className="h5 fw-bold text-light mb-2">Contact Details</h3>
+            <div className="d-flex flex-column gap-4">
+              <h3 className="section-title fw-bold text-light mb-1">Contact Details</h3>
 
               {/* Email */}
-              <Card className="gradient-card p-4">
-                <span className="font-mono gradient-text-accent small mb-1">EMAIL ADDRESS</span>
+              <Card className="gradient-card p-4 p-md-4">
+                <span className="font-mono gradient-text-accent small mb-2">EMAIL ADDRESS</span>
                 <a
                   href="mailto:esmerovince999@gmail.com"
-                  className="h6 text-light text-decoration-none font-mono text-break mb-1"
+                  className="contact-channel-link text-light text-decoration-none font-mono text-break mb-2 d-block"
                 >
                   esmerovince999@gmail.com
                 </a>
-                <span className="text-muted small">Direct inquiries and communications.</span>
+                <span className="card-item-desc text-muted">Direct inquiries and communications.</span>
               </Card>
 
               {/* GitHub */}
-              <Card className="gradient-card p-4">
-                <span className="font-mono gradient-text-accent small mb-1">GITHUB PROFILE</span>
+              <Card className="gradient-card p-4 p-md-4">
+                <span className="font-mono gradient-text-accent small mb-2">GITHUB PROFILE</span>
                 <a
                   href="https://github.com/vincee921712"
                   target="_blank"
                   rel="noreferrer"
-                  className="h6 text-light text-decoration-none font-mono text-break mb-1"
+                  className="contact-channel-link text-light text-decoration-none font-mono text-break mb-2 d-block"
                 >
                   https://github.com/vincee921712
                 </a>
-                <span className="text-muted small">Public repositories and coding activity.</span>
+                <span className="card-item-desc text-muted">Public repositories and coding activity.</span>
               </Card>
 
               {/* Institution */}
-              <Card className="gradient-card p-4">
-                <span className="font-mono gradient-text-accent small mb-1">ACADEMIC INSTITUTION</span>
-                <div className="h6 text-light mb-1">University of San Agustin</div>
-                <span className="text-muted small">BS Information Technology (2024–Present)</span>
+              <Card className="gradient-card p-4 p-md-4">
+                <span className="font-mono gradient-text-accent small mb-2">ACADEMIC INSTITUTION</span>
+                <div className="card-item-title text-light mb-2">University of San Agustin</div>
+                <span className="card-item-desc text-muted">BS Information Technology (2024–Present)</span>
               </Card>
             </div>
           </Col>
@@ -92,25 +92,25 @@ export const Contact: React.FC = () => {
           {/* Right: Interactive Form */}
           <Col lg={7}>
             <Card className="gradient-card p-4 p-md-5">
-              <h3 className="h4 fw-bold text-light mb-1">Send a Message</h3>
-              <p className="text-muted small mb-4">Complete the fields below to initiate communication.</p>
+              <h3 className="section-title fw-bold text-light mb-2">Send a Message</h3>
+              <p className="page-lead-text text-muted mb-4">Complete the fields below to initiate communication.</p>
 
               {submitted && (
                 <Alert
                   variant="success"
                   onClose={() => setSubmitted(false)}
                   dismissible
-                  className="gradient-card-static border-success text-light mb-4 font-mono small"
+                  className="gradient-card-static border-success text-light mb-4 font-mono fs-6 p-4"
                 >
                   <strong>✓ MESSAGE TRANSMITTED</strong>: Thank you for reaching out! Your message was received successfully.
                 </Alert>
               )}
 
               <Form onSubmit={handleSubmit}>
-                <Row className="g-3 mb-3">
+                <Row className="g-4 mb-4">
                   <Col md={6}>
                     <Form.Group controlId="formName">
-                      <Form.Label className="text-light small font-mono">Name</Form.Label>
+                      <Form.Label className="text-light font-mono fs-6 mb-2">Name</Form.Label>
                       <Form.Control
                         type="text"
                         name="name"
@@ -118,14 +118,14 @@ export const Contact: React.FC = () => {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Your Name"
-                        className="gradient-input"
+                        className="gradient-input form-control-lg fs-6"
                       />
                     </Form.Group>
                   </Col>
 
                   <Col md={6}>
                     <Form.Group controlId="formEmail">
-                      <Form.Label className="text-light small font-mono">Email</Form.Label>
+                      <Form.Label className="text-light font-mono fs-6 mb-2">Email</Form.Label>
                       <Form.Control
                         type="email"
                         name="email"
@@ -133,30 +133,30 @@ export const Contact: React.FC = () => {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="name@example.com"
-                        className="gradient-input"
+                        className="gradient-input form-control-lg fs-6"
                       />
                     </Form.Group>
                   </Col>
                 </Row>
 
                 <Form.Group className="mb-4" controlId="formMessage">
-                  <Form.Label className="text-light small font-mono">Message</Form.Label>
+                  <Form.Label className="text-light font-mono fs-6 mb-2">Message</Form.Label>
                   <Form.Control
                     as="textarea"
-                    rows={5}
+                    rows={6}
                     name="message"
                     required
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Write your message here..."
-                    className="gradient-input"
+                    className="gradient-input fs-6"
                   />
                 </Form.Group>
 
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="btn-gradient-primary w-100 justify-content-center"
+                  className="btn-gradient-primary btn-hero w-100 justify-content-center mt-2"
                 >
                   {submitting ? (
                     <>
