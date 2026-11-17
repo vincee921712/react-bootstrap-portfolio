@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Rich Deep Dark Palette */
-  --bg-dark: #0a0d14;
-  --bg-card: rgba(17, 24, 39, 0.75);
-  --bg-card-hover: rgba(30, 41, 59, 0.85);
+  /* Ultra-Deep Midnight Obsidian Palette */
+  --bg-dark: #040711;
+  --bg-card: rgba(8, 14, 28, 0.78);
+  --bg-card-hover: rgba(14, 23, 44, 0.88);
   
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
   --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
-  --gradient-glow: linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(129, 140, 248, 0.15) 50%, rgba(192, 132, 252, 0.15) 100%);
+  --gradient-glow: linear-gradient(135deg, rgba(56, 189, 248, 0.18) 0%, rgba(129, 140, 248, 0.18) 50%, rgba(192, 132, 252, 0.15) 100%);
   --gradient-card-border: linear-gradient(135deg, rgba(56, 189, 248, 0.4), rgba(129, 140, 248, 0.2), rgba(192, 132, 252, 0.4));
   --gradient-btn: linear-gradient(135deg, #0284c7 0%, #6366f1 100%);
   --gradient-btn-hover: linear-gradient(135deg, #0369a1 0%, #4f46e5 100%);
 
   /* Hairlines & Borders */
-  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(56, 189, 248, 0.1);
   --border-focus: #38bdf8;
 
   /* Typography Colors */
@@ -38,9 +38,11 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   background-image: 
-    radial-gradient(circle at 10% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 90% 20%, rgba(129, 140, 248, 0.09) 0%, transparent 45%),
-    radial-gradient(circle at 50% 85%, rgba(192, 132, 252, 0.07) 0%, transparent 50%);
+    radial-gradient(circle at 15% 10%, rgba(14, 116, 144, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 85% 25%, rgba(30, 58, 138, 0.26) 0%, transparent 50%),
+    radial-gradient(circle at 50% 55%, rgba(15, 23, 42, 0.8) 0%, transparent 60%),
+    radial-gradient(circle at 75% 85%, rgba(29, 78, 216, 0.18) 0%, transparent 48%),
+    radial-gradient(circle at 20% 90%, rgba(2, 132, 199, 0.16) 0%, transparent 45%);
   background-attachment: fixed;
 }
 
