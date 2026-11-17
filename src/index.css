@@ -283,3 +283,61 @@ footer {
   border-top: 1px solid var(--border-subtle);
   background: rgba(10, 13, 20, 0.95);
 }
+/* Home Screen Font Scaling & Fluid Layout */
+.home-wrapper {
+  overflow-y: visible;
+  position: relative;
+}
+
+.hero-section {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: clamp(2.8rem, 6.2vw, 5.2rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.hero-name {
+  font-size: clamp(3rem, 6.8vw, 5.6rem);
+  letter-spacing: -0.045em;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  letter-spacing: -0.02em;
+}
+
+.hero-bio {
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  line-height: 1.75;
+}
+
+.btn-hero {
+  font-size: 1.05rem !important;
+  padding: 0.85rem 1.85rem !important;
+}
+
+.stack-tag {
+  font-size: 0.92rem !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.hero-avatar-img {
+  width: clamp(240px, 24vw, 320px) !important;
+  height: clamp(240px, 24vw, 320px) !important;
+}
+
+.quote-text {
+  font-size: clamp(1.4rem, 2.4vw, 2.2rem) !important;
+  line-height: 1.5 !important;
+}
+
+.cta-title {
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  letter-spacing: -0.03em;
+}
