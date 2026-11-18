@@ -78,11 +78,11 @@ export const Home: React.FC = () => {
 
               <div className="gradient-card mx-auto p-3 text-start" style={{ maxWidth: '380px' }}>
                 <div className="d-flex align-items-center gap-3">
-                  <div className="p-3 rounded-3" style={{ background: 'linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2))' }}>
-                    <i className="bi bi-mortarboard text-info fs-3"></i>
+                  <div className="p-3 rounded-3" style={{ background: 'rgba(0, 0, 0, 0.05)' }}>
+                    <i className="bi bi-mortarboard text-dark fs-3"></i>
                   </div>
                   <div>
-                    <h5 className="mb-0 text-light fw-bold">3rd Year BSIT</h5>
+                    <h5 className="mb-0 text-dark fw-bold">3rd Year BSIT</h5>
                     <small className="text-muted font-mono fs-6">University of San Agustin</small>
                   </div>
                 </div>
@@ -93,12 +93,12 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Editorial Quote Section */}
-      <section className="py-5 my-5 border-top border-bottom border-secondary border-opacity-25" style={{ backgroundColor: 'rgba(255, 255, 255, 0.015)' }}>
+      <section className="py-5 my-5 border-top border-bottom border-secondary border-opacity-10" style={{ backgroundColor: 'rgba(0, 0, 0, 0.015)' }}>
         <Container>
           <Row className="justify-content-center text-center">
             <Col lg={9}>
               <span className="gradient-badge gradient-badge-accent mb-4 px-3 py-2 fs-6">ABOUT THE PHILOSOPHY</span>
-              <p className="quote-text fw-normal text-light mb-4">
+              <p className="quote-text fw-normal text-dark mb-4">
                 "A third-year IT student who likes turning ideas into things that work in the browser, from clean interfaces to the logic behind them."
               </p>
               <div className="font-mono text-muted fs-6">
@@ -113,7 +113,7 @@ export const Home: React.FC = () => {
       <section className="py-5 my-5 text-center">
         <Container>
           <div className="py-4">
-            <h2 className="cta-title fw-bold text-light mb-3">
+            <h2 className="cta-title fw-bold text-dark mb-3">
               Interested in <span className="gradient-text">collaborating?</span>
             </h2>
             <p className="text-muted font-mono fs-5 mb-5">

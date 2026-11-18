@@ -9,7 +9,7 @@ export const Projects: React.FC = () => {
         {/* Header */}
         <div className="mb-5 pb-4 border-bottom border-secondary border-opacity-25 page-header-section">
           <span className="gradient-badge gradient-badge-accent mb-3 px-3 py-2 fs-6">PROJECT SHOWCASE</span>
-          <h1 className="page-main-title fw-extrabold text-light mb-3">
+          <h1 className="page-main-title fw-extrabold text-dark mb-3">
             Featured <span className="gradient-text">Projects</span>
           </h1>
           <p className="page-lead-text text-muted mb-0">
@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
                 </span>
               </div>
 
-              <h2 className="project-display-title fw-bold text-light mb-3">CommunityVoice</h2>
+              <h2 className="project-display-title fw-bold text-dark mb-3">CommunityVoice</h2>
               <p className="project-subtitle gradient-text-accent font-mono mb-4">
                 Community Complaint &amp; Feedback Management System
               </p>
@@ -39,8 +39,8 @@ export const Projects: React.FC = () => {
                 A complaint management system that gives a community a clear, trackable way to be heard.
               </p>
 
-              <div className="p-4 rounded-3 border border-secondary border-opacity-25 mb-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.02)' }}>
-                <h5 className="text-light fw-bold mb-3 d-flex align-items-center gap-2">
+              <div className="p-4 rounded-3 border border-secondary border-opacity-25 mb-5" style={{ backgroundColor: 'rgba(0, 0, 0, 0.02)' }}>
+                <h5 className="text-dark fw-bold mb-3 d-flex align-items-center gap-2">
                   <i className="bi bi-bullseye gradient-text fs-4"></i> Core Objectives &amp; Purpose:
                 </h5>
                 <p className="card-item-desc text-muted mb-0">
@@ -88,7 +88,7 @@ export const Projects: React.FC = () => {
               {/* Pipeline Notice */}
               <Card className="gradient-card p-4 p-md-4">
                 <span className="gradient-badge gradient-badge-accent mb-3 fs-6">ACADEMIC PIPELINE</span>
-                <h4 className="sidebar-card-title fw-bold text-light mb-2">Future Works</h4>
+                <h4 className="sidebar-card-title fw-bold text-dark mb-2">Future Works</h4>
                 <p className="card-item-desc text-muted mb-0">
                   Future course projects, software assignments, and open-source contributions will be documented and featured here as they are developed.
                 </p>
@@ -97,7 +97,7 @@ export const Projects: React.FC = () => {
               {/* Cisco Credential Card */}
               <Card className="gradient-card p-4 p-md-4">
                 <span className="gradient-badge mb-3 fs-6">VERIFIED CERTIFICATION</span>
-                <h4 className="sidebar-card-title fw-bold text-light mb-2">Cisco Packet Tracer</h4>
+                <h4 className="sidebar-card-title fw-bold text-dark mb-2">Cisco Packet Tracer</h4>
                 <p className="card-item-desc text-muted mb-4">
                   Awarded to Vince Esmero by Networking Academy through the Cisco Networking Academy program.
                 </p>
@@ -109,7 +109,7 @@ export const Projects: React.FC = () => {
               {/* GitHub Card */}
               <Card className="gradient-card p-4 p-md-4">
                 <span className="gradient-badge mb-3 fs-6">OPEN SOURCE</span>
-                <h4 className="sidebar-card-title fw-bold text-light mb-2">GitHub Repositories</h4>
+                <h4 className="sidebar-card-title fw-bold text-dark mb-2">GitHub Repositories</h4>
                 <p className="card-item-desc text-muted mb-4">
                   Explore public code repositories and academic work directly on GitHub.
                 </p>
