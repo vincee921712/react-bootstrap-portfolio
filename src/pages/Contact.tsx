@@ -40,7 +40,7 @@ export const Contact: React.FC = () => {
         {/* Header */}
         <div className="mb-5 pb-4 border-bottom border-secondary border-opacity-25 page-header-section">
           <span className="gradient-badge gradient-badge-accent mb-3 px-3 py-2 fs-6">PUBLIC CONTACT</span>
-          <h1 className="page-main-title fw-extrabold text-dark mb-3">
+          <h1 className="page-main-title fw-extrabold text-light mb-3">
             Get In <span className="gradient-text">Touch</span>
           </h1>
           <p className="page-lead-text text-muted mb-0">
@@ -52,14 +52,14 @@ export const Contact: React.FC = () => {
           {/* Left: Contact Info */}
           <Col lg={5}>
             <div className="d-flex flex-column gap-4">
-              <h3 className="section-title fw-bold text-dark mb-1">Contact Details</h3>
+              <h3 className="section-title fw-bold text-light mb-1">Contact Details</h3>
 
               {/* Email */}
               <Card className="gradient-card p-4 p-md-4">
                 <span className="font-mono gradient-text-accent small mb-2">EMAIL ADDRESS</span>
                 <a
                   href="mailto:esmerovince999@gmail.com"
-                  className="contact-channel-link text-dark text-decoration-none font-mono text-break mb-2 d-block"
+                  className="contact-channel-link text-light text-decoration-none font-mono text-break mb-2 d-block"
                 >
                   esmerovince999@gmail.com
                 </a>
@@ -73,7 +73,7 @@ export const Contact: React.FC = () => {
                   href="https://github.com/vincee921712"
                   target="_blank"
                   rel="noreferrer"
-                  className="contact-channel-link text-dark text-decoration-none font-mono text-break mb-2 d-block"
+                  className="contact-channel-link text-light text-decoration-none font-mono text-break mb-2 d-block"
                 >
                   https://github.com/vincee921712
                 </a>
@@ -83,7 +83,7 @@ export const Contact: React.FC = () => {
               {/* Institution */}
               <Card className="gradient-card p-4 p-md-4">
                 <span className="font-mono gradient-text-accent small mb-2">ACADEMIC INSTITUTION</span>
-                <div className="card-item-title text-dark mb-2">University of San Agustin</div>
+                <div className="card-item-title text-light mb-2">University of San Agustin</div>
                 <span className="card-item-desc text-muted">BS Information Technology (2024–Present)</span>
               </Card>
             </div>
@@ -92,7 +92,7 @@ export const Contact: React.FC = () => {
           {/* Right: Interactive Form */}
           <Col lg={7}>
             <Card className="gradient-card p-4 p-md-5">
-              <h3 className="section-title fw-bold text-dark mb-2">Send a Message</h3>
+              <h3 className="section-title fw-bold text-light mb-2">Send a Message</h3>
               <p className="page-lead-text text-muted mb-4">Complete the fields below to initiate communication.</p>
 
               {submitted && (
@@ -100,7 +100,7 @@ export const Contact: React.FC = () => {
                   variant="success"
                   onClose={() => setSubmitted(false)}
                   dismissible
-                  className="gradient-card-static border-success text-dark mb-4 font-mono fs-6 p-4"
+                  className="gradient-card-static border-success text-light mb-4 font-mono fs-6 p-4"
                 >
                   <strong>✓ MESSAGE TRANSMITTED</strong>: Thank you for reaching out! Your message was received successfully.
                 </Alert>
@@ -110,7 +110,7 @@ export const Contact: React.FC = () => {
                 <Row className="g-4 mb-4">
                   <Col md={6}>
                     <Form.Group controlId="formName">
-                      <Form.Label className="text-dark font-mono fs-6 mb-2">Name</Form.Label>
+                      <Form.Label className="text-light font-mono fs-6 mb-2">Name</Form.Label>
                       <Form.Control
                         type="text"
                         name="name"
@@ -125,7 +125,7 @@ export const Contact: React.FC = () => {
 
                   <Col md={6}>
                     <Form.Group controlId="formEmail">
-                      <Form.Label className="text-dark font-mono fs-6 mb-2">Email</Form.Label>
+                      <Form.Label className="text-light font-mono fs-6 mb-2">Email</Form.Label>
                       <Form.Control
                         type="email"
                         name="email"
@@ -140,7 +140,7 @@ export const Contact: React.FC = () => {
                 </Row>
 
                 <Form.Group className="mb-4" controlId="formMessage">
-                  <Form.Label className="text-dark font-mono fs-6 mb-2">Message</Form.Label>
+                  <Form.Label className="text-light font-mono fs-6 mb-2">Message</Form.Label>
                   <Form.Control
                     as="textarea"
                     rows={6}

@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Ultra-Clean Minimalist White/Alabaster Base */
-  --bg-light: #fcfcfd;
-  --bg-card: rgba(255, 255, 255, 0.82);
-  --bg-card-hover: rgba(255, 255, 255, 0.96);
-  --bg-subtle: rgba(243, 244, 246, 0.7);
+  /* Rich Minimalist Black / Obsidian Palette */
+  --bg-dark: #070709;
+  --bg-card: rgba(18, 18, 22, 0.78);
+  --bg-card-hover: rgba(28, 28, 34, 0.92);
+  --bg-subtle: rgba(255, 255, 255, 0.05);
 
-  /* Minimalist Monochromatic Gradients */
-  --gradient-primary: linear-gradient(135deg, #09090b 0%, #27272a 55%, #52525b 100%);
-  --gradient-accent: linear-gradient(135deg, #18181b 0%, #3f3f46 60%, #71717a 100%);
-  --gradient-glow: linear-gradient(135deg, rgba(24, 24, 27, 0.05) 0%, rgba(113, 113, 122, 0.08) 100%);
-  --gradient-card-border: linear-gradient(135deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.04));
-  --gradient-btn: linear-gradient(135deg, #09090b 0%, #27272a 100%);
-  --gradient-btn-hover: linear-gradient(135deg, #18181b 0%, #3f3f46 100%);
+  /* Clean White / Silver / Monochromatic Gradients */
+  --gradient-primary: linear-gradient(135deg, #ffffff 0%, #e4e4e7 45%, #a1a1aa 100%);
+  --gradient-accent: linear-gradient(135deg, #f4f4f5 0%, #a1a1aa 55%, #71717a 100%);
+  --gradient-glow: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.03) 100%);
+  --gradient-card-border: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.05));
+  --gradient-btn: linear-gradient(135deg, #ffffff 0%, #e4e4e7 100%);
+  --gradient-btn-hover: linear-gradient(135deg, #f4f4f5 0%, #d4d4d8 100%);
 
   /* Hairlines & Borders */
-  --border-subtle: rgba(0, 0, 0, 0.08);
-  --border-card: rgba(0, 0, 0, 0.08);
-  --border-card-hover: rgba(0, 0, 0, 0.22);
-  --border-focus: #18181b;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-card: rgba(255, 255, 255, 0.1);
+  --border-card-hover: rgba(255, 255, 255, 0.3);
+  --border-focus: #ffffff;
 
   /* Typography Colors */
-  --text-main: #09090b;
-  --text-muted: #52525b;
+  --text-main: #f4f4f5;
+  --text-muted: #a1a1aa;
   --text-dim: #71717a;
 }
 
@@ -34,26 +34,24 @@
 body {
   margin: 0;
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #fafafa;
+  background-color: #070709;
   color: var(--text-muted);
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   background-image: 
-    /* Layer 1: Ambient White-to-Black Monochrome Radial Glows */
-    radial-gradient(circle at 10% 12%, rgba(9, 9, 11, 0.09) 0%, transparent 45%),
-    radial-gradient(circle at 90% 16%, rgba(24, 24, 27, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.7) 0%, transparent 60%),
-    radial-gradient(circle at 80% 85%, rgba(9, 9, 11, 0.08) 0%, transparent 45%),
-    radial-gradient(circle at 20% 90%, rgba(24, 24, 27, 0.09) 0%, transparent 50%),
-    /* Layer 2: Suitable Tech Developer Grid Pattern */
-    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    /* Layer 3: Visible White-to-Black/Graphite Foundation Gradient */
-    linear-gradient(165deg, #ffffff 0%, #f4f4f6 30%, #e4e4e7 65%, #d4d4d8 100%);
+    /* Layer 1: Subtle Luminous White Gradient Glows on Black Canvas */
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.14) 0%, transparent 55%),
+    radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.07) 0%, transparent 45%),
+    radial-gradient(circle at 85% 35%, rgba(255, 255, 255, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    /* Layer 2: Suitable Tech Developer Grid Pattern in Translucent White */
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    /* Layer 3: Deep Black Foundation Gradient */
+    linear-gradient(180deg, #09090b 0%, #070709 50%, #030304 100%);
   background-size: 
-    auto,
     auto,
     auto,
     auto,
@@ -90,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.035em;
 }
 
-/* Light Minimalist Cards with Subtle Elevation & Gradient Borders */
+/* Dark Obsidian Minimalist Cards with Subtle Glassmorphism & Elevation */
 .gradient-card {
   position: relative;
   background: var(--bg-card) !important;
@@ -98,14 +96,14 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-card) !important;
   border-radius: 16px !important;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.3) !important;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .gradient-card:hover {
   transform: translateY(-3px);
   border-color: var(--border-card-hover) !important;
-  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.09), 0 4px 12px -2px rgba(0, 0, 0, 0.04) !important;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.06) !important;
 }
 
 .gradient-card-static {
@@ -113,17 +111,17 @@ h1, h2, h3, h4, h5, h6 {
   backdrop-filter: blur(20px);
   border: 1px solid var(--border-card) !important;
   border-radius: 16px !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
 }
 
-/* Clean Photo Ring */
+/* Clean Photo Ring with Subtle White Silver Accent */
 .gradient-avatar-wrapper {
   position: relative;
   display: inline-block;
   padding: 4px;
-  background: linear-gradient(135deg, #09090b 0%, #71717a 50%, #e4e4e7 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 50%, #27272a 100%);
   border-radius: 50%;
-  box-shadow: 0 12px 36px -6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 12px 36px -6px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 0.1);
 }
 
 .gradient-avatar-img {
@@ -131,20 +129,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 220px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #ffffff;
+  border: 4px solid #09090b;
   display: block;
 }
 
-/* Minimalist Dark Pill Action Buttons */
+/* High-Contrast Luminous White Action Buttons */
 .btn-gradient-primary {
   background: var(--gradient-btn) !important;
-  border: 1px solid #18181b !important;
-  color: #ffffff !important;
-  font-weight: 600;
+  border: 1px solid #ffffff !important;
+  color: #09090b !important;
+  font-weight: 700;
   padding: 0.7rem 1.6rem;
   border-radius: 999px;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.18);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -153,16 +151,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-gradient-primary:hover {
   background: var(--gradient-btn-hover) !important;
-  border-color: #27272a !important;
+  border-color: #ffffff !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
-  color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.28);
+  color: #09090b !important;
 }
 
 .btn-gradient-outline {
   position: relative;
-  background: rgba(255, 255, 255, 0.8) !important;
-  border: 1px solid rgba(0, 0, 0, 0.18) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
   color: var(--text-main) !important;
   font-weight: 600;
   padding: 0.7rem 1.6rem;
@@ -172,55 +170,55 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-gradient-outline:hover {
-  border-color: #09090b !important;
-  background: #ffffff !important;
-  color: #09090b !important;
+  border-color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.12);
 }
 
-/* Light Gradient Badges / Chips */
+/* Dark Minimalist Badges / Chips */
 .gradient-badge {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
   font-weight: 500;
   padding: 0.4rem 0.85rem;
   border-radius: 999px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   color: var(--text-main);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   transition: all 0.2s ease;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .gradient-badge:hover {
-  border-color: rgba(0, 0, 0, 0.3);
-  background: #f4f4f5;
-  color: #000000;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
 }
 
 .gradient-badge-accent {
-  background: linear-gradient(135deg, rgba(24, 24, 27, 0.06), rgba(39, 39, 42, 0.03));
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  color: var(--text-main);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: #ffffff;
   font-weight: 600;
 }
 
 /* Navbar */
 .gradient-navbar {
-  background: rgba(252, 252, 253, 0.88) !important;
+  background: rgba(7, 7, 9, 0.85) !important;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border-subtle);
   padding: 1.1rem 0;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .brand-gradient {
@@ -242,21 +240,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-nav-link:hover {
-  color: var(--text-main) !important;
-  background: rgba(0, 0, 0, 0.04);
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .gradient-nav-link.active {
-  color: #09090b !important;
-  background: rgba(0, 0, 0, 0.07);
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.14);
   font-weight: 700;
 }
 
 /* Form Controls */
 .gradient-input {
-  background-color: #ffffff !important;
-  border: 1px solid rgba(0, 0, 0, 0.14) !important;
-  color: var(--text-main) !important;
+  background-color: rgba(18, 18, 22, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
   border-radius: 12px !important;
   padding: 0.85rem 1.1rem !important;
   font-size: 0.95rem !important;
@@ -264,9 +262,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-input:focus {
-  border-color: #18181b !important;
-  box-shadow: 0 0 0 3px rgba(24, 24, 27, 0.1) !important;
-  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15) !important;
+  background-color: rgba(24, 24, 30, 0.95) !important;
 }
 
 .gradient-input::placeholder {
@@ -280,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 14px !important;
   margin-bottom: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .gradient-accordion .accordion-button {
@@ -292,17 +290,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-accordion .accordion-button:not(.collapsed) {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.01));
-  color: #09090b;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+  color: #ffffff;
   border-bottom: 1px solid var(--border-subtle);
 }
 
 .gradient-accordion .accordion-button::after {
-  filter: none;
+  filter: invert(1);
 }
 
 .gradient-accordion .accordion-body {
-  background-color: #ffffff;
+  background-color: rgba(12, 12, 16, 0.85);
   color: var(--text-muted);
   padding: 1.4rem;
 }
@@ -310,17 +308,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer */
 footer {
   border-top: 1px solid var(--border-subtle);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(7, 7, 9, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
 
-.hover-dark {
+.hover-white {
   transition: color 0.2s ease;
 }
 
-.hover-dark:hover {
-  color: #09090b !important;
+.hover-white:hover {
+  color: #ffffff !important;
 }
 
 /* Home Screen Font Scaling & Fluid Layout */

@@ -17,23 +17,23 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="d-flex gap-4">
-            <Link to="/" className="text-muted text-decoration-none small hover-dark">
+            <Link to="/" className="text-muted text-decoration-none small hover-white">
               Home
             </Link>
-            <Link to="/about" className="text-muted text-decoration-none small hover-dark">
+            <Link to="/about" className="text-muted text-decoration-none small hover-white">
               About
             </Link>
-            <Link to="/projects" className="text-muted text-decoration-none small hover-dark">
+            <Link to="/projects" className="text-muted text-decoration-none small hover-white">
               Projects
             </Link>
-            <Link to="/contact" className="text-muted text-decoration-none small hover-dark">
+            <Link to="/contact" className="text-muted text-decoration-none small hover-white">
               Contact
             </Link>
             <a
               href="https://github.com/vincee921712"
               target="_blank"
               rel="noreferrer"
-              className="text-muted text-decoration-none small hover-dark"
+              className="text-muted text-decoration-none small hover-white"
             >
               <i className="bi bi-github"></i>
             </a>

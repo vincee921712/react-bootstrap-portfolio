@@ -10,7 +10,7 @@ import { Contact } from './pages/Contact'
 
 export const App: React.FC = () => {
   return (
-    <div className="d-flex flex-column min-vh-100" data-bs-theme="light">
+    <div className="d-flex flex-column min-vh-100" data-bs-theme="dark">
       <ScrollToTop />
       <NavigationBar />
       <main className="flex-grow-1 d-flex flex-column">

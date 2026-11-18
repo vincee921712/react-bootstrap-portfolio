@@ -71,7 +71,7 @@ export const About: React.FC = () => {
           <div className="d-flex flex-wrap justify-content-between align-items-end gap-4">
             <div>
               <span className="gradient-badge gradient-badge-accent mb-3 px-3 py-2 fs-6">CURRICULUM VITAE</span>
-              <h1 className="page-main-title fw-extrabold text-dark mb-3">
+              <h1 className="page-main-title fw-extrabold text-light mb-3">
                 Resume &amp; <span className="gradient-text">Qualifications</span>
               </h1>
               <p className="page-lead-text text-muted mb-0">
@@ -84,7 +84,7 @@ export const About: React.FC = () => {
                 className="btn-gradient-outline text-decoration-none btn-hero"
                 onClick={() => setShowCertModal(true)}
               >
-                <i className="bi bi-patch-check-fill text-dark"></i>
+                <i className="bi bi-patch-check-fill text-light"></i>
                 <span>View Cisco Credential</span>
               </Button>
               <Link to="/contact" className="btn-gradient-primary btn-hero">
@@ -98,7 +98,7 @@ export const About: React.FC = () => {
         <section className="mb-5 pb-5 border-bottom border-secondary border-opacity-25">
           <div className="d-flex align-items-center gap-3 mb-4">
             <i className="bi bi-mortarboard gradient-text fs-2"></i>
-            <h2 className="section-title fw-bold text-dark mb-0">Educational Background</h2>
+            <h2 className="section-title fw-bold text-light mb-0">Educational Background</h2>
           </div>
 
           <Row className="g-4">
@@ -111,7 +111,7 @@ export const About: React.FC = () => {
                     </span>
                     <span className="font-mono text-muted fs-6">{item.period}</span>
                   </div>
-                  <h3 className="card-item-title fw-bold text-dark mb-2 mt-2">{item.degree}</h3>
+                  <h3 className="card-item-title fw-bold text-light mb-2 mt-2">{item.degree}</h3>
                   <div className="font-mono gradient-text-accent fs-6 mb-3">{item.school}</div>
                   <p className="card-item-desc text-muted mt-auto mb-0">{item.highlight}</p>
                 </Card>
@@ -124,7 +124,7 @@ export const About: React.FC = () => {
         <section className="mb-5 pb-5 border-bottom border-secondary border-opacity-25">
           <div className="d-flex align-items-center gap-3 mb-4">
             <i className="bi bi-cpu gradient-text fs-2"></i>
-            <h2 className="section-title fw-bold text-dark mb-0">Technical Skills</h2>
+            <h2 className="section-title fw-bold text-light mb-0">Technical Skills</h2>
           </div>
 
           <Row className="g-4">
@@ -149,19 +149,19 @@ export const About: React.FC = () => {
         <section className="mb-5 pb-4">
           <div className="d-flex align-items-center gap-3 mb-4">
             <i className="bi bi-award gradient-text fs-2"></i>
-            <h2 className="section-title fw-bold text-dark mb-0">Projects &amp; Certifications</h2>
+            <h2 className="section-title fw-bold text-light mb-0">Projects &amp; Certifications</h2>
           </div>
 
           <Accordion defaultActiveKey="0" className="gradient-accordion">
             <Accordion.Item eventKey="0">
               <Accordion.Header>
-                <i className="bi bi-patch-check-fill text-dark me-3 fs-5"></i>
+                <i className="bi bi-patch-check-fill text-light me-3 fs-5"></i>
                 <span className="accordion-heading-text">Certification: Getting Started with Cisco Packet Tracer</span>
               </Accordion.Header>
               <Accordion.Body className="p-4 p-md-5">
                 <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4">
                   <div>
-                    <h4 className="card-item-title text-dark fw-bold mb-2">
+                    <h4 className="card-item-title text-light fw-bold mb-2">
                       Awarded to Vince Esmero by Networking Academy through the Cisco Networking Academy program.
                     </h4>
                     <p className="card-item-desc text-muted mb-3">
@@ -184,13 +184,13 @@ export const About: React.FC = () => {
 
             <Accordion.Item eventKey="1">
               <Accordion.Header>
-                <i className="bi bi-kanban-fill text-dark me-3 fs-5"></i>
+                <i className="bi bi-kanban-fill text-light me-3 fs-5"></i>
                 <span className="accordion-heading-text">Capstone Proposal: CommunityVoice</span>
               </Accordion.Header>
               <Accordion.Body className="p-4 p-md-5">
                 <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4">
                   <div>
-                    <h4 className="card-item-title text-dark fw-bold mb-2">Community Complaint &amp; Feedback Management System</h4>
+                    <h4 className="card-item-title text-light fw-bold mb-2">Community Complaint &amp; Feedback Management System</h4>
                     <p className="card-item-desc text-muted mb-3">
                       A complaint management system that gives a community a clear, trackable way to be heard.
                     </p>
@@ -217,9 +217,9 @@ export const About: React.FC = () => {
           size="lg"
           contentClassName="gradient-card-static"
         >
-          <Modal.Header closeButton className="border-bottom border-secondary border-opacity-25 p-4">
-            <Modal.Title className="text-dark h5 d-flex align-items-center gap-2">
-              <i className="bi bi-patch-check-fill text-dark"></i> Cisco Networking Academy
+          <Modal.Header closeButton closeVariant="white" className="border-bottom border-secondary border-opacity-25 p-4">
+            <Modal.Title className="text-light h5 d-flex align-items-center gap-2">
+              <i className="bi bi-patch-check-fill text-light"></i> Cisco Networking Academy
             </Modal.Title>
           </Modal.Header>
           <Modal.Body className="p-4 p-md-5">
@@ -227,17 +227,17 @@ export const About: React.FC = () => {
               <div className="display-3 gradient-text mb-3">
                 <i className="bi bi-award"></i>
               </div>
-              <h3 className="text-dark fw-bold mb-2">Getting Started with Cisco Packet Tracer</h3>
+              <h3 className="text-light fw-bold mb-2">Getting Started with Cisco Packet Tracer</h3>
               <p className="font-mono text-muted fs-6 mb-0">Awarded to: Vince Esmero</p>
             </div>
             <ListGroup variant="flush" className="bg-transparent border-top border-secondary border-opacity-25 pt-3">
               <ListGroup.Item className="bg-transparent text-muted fs-6 d-flex justify-content-between px-0 py-3">
                 <span>Program:</span>
-                <span className="text-dark fw-semibold">Cisco Networking Academy program</span>
+                <span className="text-light fw-semibold">Cisco Networking Academy program</span>
               </ListGroup.Item>
               <ListGroup.Item className="bg-transparent text-muted fs-6 d-flex justify-content-between px-0 py-3">
                 <span>Awarded by:</span>
-                <span className="text-dark fw-semibold">Networking Academy</span>
+                <span className="text-light fw-semibold">Networking Academy</span>
               </ListGroup.Item>
               <ListGroup.Item className="bg-transparent text-muted fs-6 d-flex justify-content-between px-0 py-3">
                 <span>Status:</span>
