@@ -99,7 +99,7 @@ export const Home: React.FC = () => {
             <Col lg={9}>
               <span className="gradient-badge gradient-badge-accent mb-4 px-3 py-2 fs-6">ABOUT THE PHILOSOPHY</span>
               <p className="quote-text fw-normal text-dark mb-4">
-                "A third-year IT student who likes turning ideas into things that work in the browser, from clean interfaces to the logic behind them."
+                "I’m a third-year IT student who enjoys bringing ideas to life in the browser from the clean, responsive interfaces users see to the backend logic that powers them. For me, web development is all about pairing thoughtful design with practical problem-solving to build things that simply work."
               </p>
               <div className="font-mono text-muted fs-6">
                 Vince Dorell F. Esmero &bull; University of San Agustin (2024–Present)
